@@ -1,6 +1,5 @@
 bl_info = {
     "name": "Smooth Auto",
-    "author": "Zenudeen Shehbaz",
     "version": (1, 0),
     "blender": (2, 80, 0),
 
