@@ -1,16 +1,13 @@
-bl_info = {
+bl_info = 
+{
     "name": "Smooth Auto",
     "version": (1, 0),
-    "blender": (2, 80, 0),
-
+    "blender": (2, 80, 0)
 }
 
 
 
 import bpy
-
-#bpy.ops.object.shade_smooth()
-#bpy.context.object.data.use_auto_smooth = True
 
 
 class SmoothAuto(bpy.types.Operator):
@@ -26,6 +23,7 @@ class SmoothAuto(bpy.types.Operator):
         bpy.ops.object.shade_smooth()
         bpy.context.object.data.use_auto_smooth = True
         return {'FINISHED'}
+
 
 def register():
     bpy.utils.register_class(SmoothAuto)
